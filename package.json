@@ -1,0 +1,15 @@
+{
+  "name": "simplediscordrpc",
+  "version": "1.0.0",
+  "description": "Simple discord rpc made in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nick",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^3.2.0",
+    "dotenv": "^10.0.0"
+  }
+}
