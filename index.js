@@ -12,6 +12,12 @@ var small_image_text=process.env.SMALL_IMAGE_TEXT;
 var files = fs.readdirSync('Images/');
 var large_image_key=files[Math.floor(Math.random()*files.length)];
 var small_image_key=files[Math.floor(Math.random()*files.length)];
+if(large_image_key.endsWith(".md")){
+    var large_image_key=files[Math.floor(Math.random()*files.length)];
+}
+else if(small_image_key.endsWith(".md")){
+    var small_image_key=files[Math.floor(Math.random()*files.length)];
+}
 
 client.on("ready", () => {
     client.setActivity({
